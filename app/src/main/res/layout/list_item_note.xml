@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Mon titre"
+                style="@style/noteTitleFont"
+                />
+
+            <TextView
+                android:id="@+id/tx_excerpt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:maxLines="1"
+                android:textStyle="italic"
+                android:textColor="@android:color/darker_gray"
+                android:ellipsize="end"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae consequat nisl. Nam sollicitudin massa neque, eu ultricies nulla vestibulum vestibulum. Nullam ornare sagittis orci, non porttitor tellus congue id"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
